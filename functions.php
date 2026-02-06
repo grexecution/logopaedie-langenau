@@ -410,3 +410,20 @@ require_once LOGOPAEDIE_THEME_DIR . '/inc/seo.php';
  * Include Bewerbung page meta box
  */
 require_once LOGOPAEDIE_THEME_DIR . '/inc/bewerbung-meta.php';
+
+/**
+ * Include Analytics & Tracking functionality
+ */
+require_once LOGOPAEDIE_THEME_DIR . '/inc/tracking.php';
+
+/**
+ * Add favicon support
+ */
+function logopaedie_favicon() {
+    $favicon_url = LOGOPAEDIE_THEME_URI . '/assets/images/favicon.png';
+    ?>
+    <link rel="icon" type="image/png" href="<?php echo esc_url($favicon_url); ?>">
+    <link rel="apple-touch-icon" href="<?php echo esc_url($favicon_url); ?>">
+    <?php
+}
+add_action('wp_head', 'logopaedie_favicon', 1);
