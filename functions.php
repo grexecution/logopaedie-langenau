@@ -412,11 +412,6 @@ require_once LOGOPAEDIE_THEME_DIR . '/inc/seo.php';
 require_once LOGOPAEDIE_THEME_DIR . '/inc/bewerbung-meta.php';
 
 /**
- * Include Analytics & Tracking functionality
- */
-require_once LOGOPAEDIE_THEME_DIR . '/inc/tracking.php';
-
-/**
  * Add favicon support
  */
 function logopaedie_favicon() {
